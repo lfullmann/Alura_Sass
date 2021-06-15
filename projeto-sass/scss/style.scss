@@ -3,6 +3,7 @@ $purple: #a050be;
 $ligth-grey: #eaeaeb;
 $dark-grey: #464646;
 $yellow: #fabe50;
+$img-width: 45%;
 
 .header {
   font-family: Arial, Helvetica, sans-serif;
@@ -172,5 +173,77 @@ $yellow: #fabe50;
     &:hover {
       color: $purple;
     }
+  }
+}
+.about {
+  width: 80%;
+  margin: 0 auto 40px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  &__title {
+    background-color: $ligth-grey;
+    text-align: center;
+    padding: 20px;
+  }
+
+  &__h1 {
+    font-size: 22px;
+    color: $dark-grey;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__link {
+      font-size: 12px;
+      text-decoration: none;
+      color: $dark-grey;
+
+      &:hover {
+        text-decoration: underline;
+        color: $purple;
+      }
+    }
+    &__img {
+      width: 10px;
+      margin: 8px;
+    }
+  }
+  &__img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  &__intro {
+    font-weight: 100;
+    color: $dark-grey;
+    width: 70%;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 16px;
+  }
+  &__split {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__img2 {
+    width: $img-width;
+  }
+  //Cálculo para separar imagem e texto. Do lado esquerdo o valor da imagem, e no direito o restante. Feito com interpolação #{}.
+  &__txt {
+    width: calc(100% - #{$img-width});
+  }
+  &__p {
+    font-size: 14px;
+    padding: 10px 20px;
+    color: $dark-grey;
   }
 }
