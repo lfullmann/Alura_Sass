@@ -52,7 +52,7 @@ $img-width: 45%;
 $directions: top, bottom, left, right;
 $layout-margin-size: 10px;
 
-@each $directions in $direction {
+@each $direction in $directions {
   %no-margin-#{$direction} {
     margin-#{direction}: 0;
   }
