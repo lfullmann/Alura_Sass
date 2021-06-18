@@ -49,23 +49,23 @@ $img-width: 45%;
 
 @import "header", "footer", "about", "article";
 
-$directions: top, bottom, left, right;
-$layout-margin-size: 10px;
+// $directions: top, bottom, left, right;
+// $layout-margin-size: 10px;
 
-@each $directions in $direction {
-  %no-margin-#{$direction} {
-    margin-#{direction}: 0;
-  }
-  %default-margin-#{$direction} {
-    margin-#{$direction}: $layout-margin-size;
-  }
-  %double-margin-#{$direction} {
-    margin-#{$direction}: $layout-margin-size * 2;
-  }
-  %half-margin-#{$direction} {
-    margin-#{$direction}: $layout-margin-size / 2;
-  }
-}
+// // @each $directions in $direction {
+// //   %no-margin-#{$direction} {
+// //     margin-#{direction}: 0;
+// //   }
+// //   %default-margin-#{$direction} {
+// //     margin-#{$direction}: $layout-margin-size;
+// //   }
+// //   %double-margin-#{$direction} {
+// //     margin-#{$direction}: $layout-margin-size * 2;
+// //   }
+// //   %half-margin-#{$direction} {
+// //     margin-#{$direction}: $layout-margin-size / 2;
+// //   }
+// // }
 
 .main {
   display: flex;
@@ -104,24 +104,24 @@ $layout-margin-size: 10px;
     margin-bottom: 20px;
   }
   &__date {
-    @extend %no-margin-top,
-      %no-margin-bottom,
-      %default-margin-left,
-      %default-margin-rigth;
-    // margin: 0 10px;
+    // @extend %no-margin-top,
+    //   %no-margin-bottom,
+    //   %default-margin-left,
+    //   %default-margin-rigth;
+    margin: 0 10px;
     font-size: 12px;
     font-style: italic;
   }
   &__tag {
-    @extend %no-margin-top,
-      %no-margin-bottom,
-      %default-margin-left,
-      %default-margin-rigth;
+    // @extend %no-margin-top,
+    //   %no-margin-bottom,
+    //   %default-margin-left,
+    //   %default-margin-rigth;
     font-size: 14px;
     padding: 5px 7px;
     color: $purple;
     border: 1px solid $purple;
-    // margin: 0 10px;
+    margin: 0 10px;
   }
   &__details {
     border: 1px solid $ligth-grey;
