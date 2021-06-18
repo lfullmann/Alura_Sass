@@ -49,23 +49,23 @@ $img-width: 45%;
 
 @import "header", "footer", "about", "article";
 
-// $directions: top, bottom, left, right;
-// $layout-margin-size: 10px;
+$directions: top, bottom, left, right;
+$layout-margin-size: 10px;
 
-// // @each $directions in $direction {
-// //   %no-margin-#{$direction} {
-// //     margin-#{direction}: 0;
-// //   }
-// //   %default-margin-#{$direction} {
-// //     margin-#{$direction}: $layout-margin-size;
-// //   }
-// //   %double-margin-#{$direction} {
-// //     margin-#{$direction}: $layout-margin-size * 2;
-// //   }
-// //   %half-margin-#{$direction} {
-// //     margin-#{$direction}: $layout-margin-size / 2;
-// //   }
-// // }
+@each $directions in $direction {
+  %no-margin-#{$direction} {
+    margin-#{direction}: 0;
+  }
+  %default-margin-#{$direction} {
+    margin-#{$direction}: $layout-margin-size;
+  }
+  %double-margin-#{$direction} {
+    margin-#{$direction}: $layout-margin-size * 2;
+  }
+  %half-margin-#{$direction} {
+    margin-#{$direction}: $layout-margin-size / 2;
+  }
+}
 
 .main {
   display: flex;
